@@ -55,7 +55,7 @@ function Store (locationName ,minCustHr, maxCustHr, avgCookiesCust){
  this.custHr = [];
  this.cookiesHr = [];
  this.totalCookieSales = 0;
- this.allCookiesEver = 0;
+
  allShops.push(this);
  this.randomCustHr = function() {
   for( var i = 0; i < hoursOpen.length; i++) {
