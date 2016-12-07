@@ -177,20 +177,6 @@ function headerRow () {
 
 tableMf.appendChild(trEl);
 
-
-      //  var thEl1 = document.createElement('th');
-
-      //  trEl.appendChild(thEl1);
-
-     }
-    // thEl = document.createElement('th');
-    //  thEl.textContent = ('');
-    //  trEl.appendChild(thEl);
-    //  tableMf.appendChild(trEl);
-
-
-
-
 headerRow();
 storeRows();
 footerRows();
