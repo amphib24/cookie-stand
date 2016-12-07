@@ -1,46 +1,5 @@
 'use strict';
-var hoursOpen = ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm','8pm'];
 
-
-// var firstAndPike = {
-//   locationName: 'First and Pike',
-//   minCustHr: 23,
-//   maxCustHr: 65,
-//   avgCookiesCust: 6.3,
-//   custHr: [],
-//   cookiesHr: [],
-//   totalCookieSales: 0,
-//
-//   randomCustHr : function() {
-//    for( var i = 0; i < hoursOpen.length; i++) {
-//      var  min = Math.ceil(this.minCustHr);
-//      var max = Math.floor(this.maxCustHr);
-//      var result = Math.floor(Math.random() * (max - min + 1)) + min;
-//      this.custHr.push(result);
-//    }
-// },
-//
-//  cookiesSold : function() {
-//    this.randomCustHr();
-//   for(var i = 0; i < hoursOpen.length; i++){
-//     this.cookiesHr.push(Math.ceil(this.custHr[i] * this.avgCookiesCust));
-//     this.totalCookieSales += this.cookiesHr[i];
-// }
-// },
-//  render: function () {
-//    this.cookiesSold();
-//    var firstAndPikeUl = document.getElementById('firstandpikelist');
-//    for (var i = 0; i <  hoursOpen.length; i++){
-//      var liEl = document.createElement('li');
-//      liEl.textContent = hoursOpen[i] + ': ' + this.cookiesHr[i] + ' cookies';
-//      firstAndPikeUl.appendChild(liEl);
-//    }
-//    liEl = document.createElement('li');
-//    liEl.textContent = 'Total:' + this.totalCookieSales + 'cookies';
-//    firstAndPikeUl.appendChild(liEl);
-//  }
-// }
-// firstAndPike.render();
 var hoursOpen =  ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm',];
 var allShops = [];
 var tableMf = document.getElementById('SalmonCookiejs');
@@ -161,25 +120,74 @@ function headerRow () {
 
 
 
-          for (var j = 0; j < allShops.length; j++) {
-
-            var tdEl2 = document.createElement('td')
-
-            hourlyCookieSales += allShops[j].cookiesHr[j];
-            tdEl2.textContent = hourlyCookieSales;
-            console.log(hourlyCookieSales, 'here');
-            trEL.appendChild(tdEl2);
-
+          // for (var j = 0; j < allShops.length; j++) {
+          //
+          //   var tdEl2 = document.createElement('td')
+          //
+          //   hourlyCookieSales += allShops[j].cookiesHr[j];
+          //   tdEl2.textContent = hourlyCookieSales;
+          //   console.log(hourlyCookieSales, 'here');
+          //   trEL.appendChild(tdEl2);
+          //
           }
-
+tableMf.appendChild(trEl);
 
   }
 
-tableMf.appendChild(trEl);
 
 headerRow();
 storeRows();
 footerRows();
+
+
+
+
+
+
+
+
+// var hoursOpen = ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm','8pm'];
+
+
+// var firstAndPike = {
+//   locationName: 'First and Pike',
+//   minCustHr: 23,
+//   maxCustHr: 65,
+//   avgCookiesCust: 6.3,
+//   custHr: [],
+//   cookiesHr: [],
+//   totalCookieSales: 0,
+//
+//   randomCustHr : function() {
+//    for( var i = 0; i < hoursOpen.length; i++) {
+//      var  min = Math.ceil(this.minCustHr);
+//      var max = Math.floor(this.maxCustHr);
+//      var result = Math.floor(Math.random() * (max - min + 1)) + min;
+//      this.custHr.push(result);
+//    }
+// },
+//
+//  cookiesSold : function() {
+//    this.randomCustHr();
+//   for(var i = 0; i < hoursOpen.length; i++){
+//     this.cookiesHr.push(Math.ceil(this.custHr[i] * this.avgCookiesCust));
+//     this.totalCookieSales += this.cookiesHr[i];
+// }
+// },
+//  render: function () {
+//    this.cookiesSold();
+//    var firstAndPikeUl = document.getElementById('firstandpikelist');
+//    for (var i = 0; i <  hoursOpen.length; i++){
+//      var liEl = document.createElement('li');
+//      liEl.textContent = hoursOpen[i] + ': ' + this.cookiesHr[i] + ' cookies';
+//      firstAndPikeUl.appendChild(liEl);
+//    }
+//    liEl = document.createElement('li');
+//    liEl.textContent = 'Total:' + this.totalCookieSales + 'cookies';
+//    firstAndPikeUl.appendChild(liEl);
+//  }
+// }
+// firstAndPike.render();
 
 //  firstAndPike.randomCustHr();
 //  firstAndPike.cookiesSold();
