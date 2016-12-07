@@ -44,7 +44,8 @@ var hoursOpen = ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm',
 var hoursOpen =  ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm',];
 var allShops = [];
 var tableMf = document.getElementById('SalmonCookiejs');
-// var allCookiesEver = 0;
+var allCookiesEver = 0;
+var hourlyCookieSales = 0;
 
 
 function Store (locationName ,minCustHr, maxCustHr, avgCookiesCust){
@@ -92,6 +93,8 @@ this.render = function() {
   trEl.appendChild(tdEl);
 
   tableMf.appendChild(trEl);
+
+
 }
 };
 
@@ -146,27 +149,47 @@ function headerRow () {
         thEl.textContent = ('store totals');
         trEl.appendChild(thEl);
 
-     for (var i = 0; i < allShops.length; i++){
-       for (var i = 0; i < cookiesSold.length; i++)
-       thEl1.textContent = allCookiesEver += allShops[i],cookiesSold[i];
-       console.log()
-       trEl.appendChild(thEl);
-       tableMf.appendChild(trEl);
+
+    for(var i = 0; i < hoursOpen.length; i++){
+
+        var tdEl1 = document.createElement('td')
+
+        allCookiesEver = allCookiesEver + hoursOpen[i].totalCookieSales;
+        tdEl1.textContent = allCookiesEver;
+        // console.log(allCookiesEver);
+          trEl.appendChild(tdEl1);
 
 
 
+          for (var j = 0; j < allShops.length; j++) {
 
-       var thEl1 = document.createElement('th');
+            var tdEl2 = document.createElement('td')
 
-       trEl.appendChild(thEl1);
+            hourlyCookieSales += allShops[j].cookiesHr[j];
+            tdEl2.textContent = hourlyCookieSales;
+            console.log(hourlyCookieSales, 'here');
+            trEL.appendChild(tdEl2);
+
+          }
+
+
+  }
+
+tableMf.appendChild(trEl);
+
+
+      //  var thEl1 = document.createElement('th');
+
+      //  trEl.appendChild(thEl1);
+
      }
-    thEl = document.createElement('th');
-     thEl.textContent = ('');
-     trEl.appendChild(thEl);
-     tableMf.appendChild(trEl);
+    // thEl = document.createElement('th');
+    //  thEl.textContent = ('');
+    //  trEl.appendChild(thEl);
+    //  tableMf.appendChild(trEl);
 
 
- }
+
 
 headerRow();
 storeRows();
