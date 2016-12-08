@@ -128,37 +128,25 @@ for(var i = 0; i < allShops.length; i++){
   tdEl = document.createElement('td');
   tdEl.textContent = endTotal;
   trEl.appendChild(tdEl);
-  
+
 tableMf.appendChild(trEl);
 
-//////////////////
-// allCookiesEver = allCookiesEver + hoursOpen[i].totalCookieSales;
-// tdEl1.textContent = allCookiesEver;
-// console.log(allCookiesEver);
-//   trEl.appendChild(tdEl1);
-/////////////////
-          // for (var j = 0; j < allShops.length; j++) {
-          //
-          //   var tdEl2 = document.createElement('td')
-          //
-          //   hourlyCookieSales = allShops[j] * cookiesHr[j];
-          //   tdEl2.textContent = hourlyCookieSales;
-          //   console.log(hourlyCookieSales, 'here');
-          //   trEl.appendChild(tdEl2);
-          // //
-          // }
-
-
   }
-
-
 headerRow();
 storeRows();
 footerRows();
 
 
 
+var storeForm = document.getElementById('store-form');
+var allEntries = [];
 
+var Entries = function(storeName, minCookiesSold, maxCookiesSold, totsMaGoatsCookies) {
+  this.storeName = storeName;
+  this.minCookiesSold = minCookiesSold;
+  this.maxCookiesSold = maxCookiesSold;
+  this.totsMaGoatsCookies = totsMaGoatsCookies;
+};
 
 
 
