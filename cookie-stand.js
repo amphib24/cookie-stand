@@ -136,8 +136,8 @@ headerRow();
 storeRows();
 footerRows();
 
-
-
+/////////////////////////
+var table = document.getElementById('SalmonCookiejs')
 var storeForm = document.getElementById('store-form');
 var allEntries = [];
 
@@ -148,7 +148,27 @@ var Entries = function(storeName, minCookiesSold, maxCookiesSold, totsMaGoatsCoo
   this.totsMaGoatsCookies = totsMaGoatsCookies;
 };
 
+Entries.render = function (){
+  var trEl =
+  document.createElement('tr');
+  var tdEl = document.createElement('td');
+  tdEl.innerHTML = this.storeName + this.minCookiesSold + this.maxCookiesSold + this.totsMaGoatsCookies;
+  trEl.appendChild(tdEl);
+  return tdEl;
 
+};
+
+
+
+
+
+//////////////////
+/*event handler*/
+function handleCommentSubmit(event) {
+  event.preventDefault();
+}
+/*event listner*/
+storeForm.addEventListener('submit', handleCommentSubmit);
 
 
 // var hoursOpen = ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm','8pm'];
