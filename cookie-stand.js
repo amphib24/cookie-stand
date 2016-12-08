@@ -159,8 +159,13 @@ Entries.render = function (){
 };
 
 
+function renderAllEntries() {
+  chatList.innerHTML = '';
 
-
+  for (var i = 0; i < allEntries.length; i++) {
+    chatList.appendChild(allentries[i].render());
+  }
+};
 
 //////////////////
 /*event handler*/
