@@ -2,12 +2,34 @@ body{
   background-color: #ffecd3;
 
 }
+/*Header*/
+nav{
+  background: none;
+    float: right;
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+    width: 45%;
+
+}
+nav ul{
+  list-style: none;
+  display: inline;
+}
+#mainheader {
+  border: #e5aa5a 2.5px solid;
+  background-color: #ffcc87;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 75%;
+}
+
+/*Tabe*/
 #SalmonCookiejs {
   border: #c78834 3px solid;
   background-color: #ffdcad;
   max-width: 1px;
   margin: 0 auto;
-
 }
 #SalmonCookiejs td {
   border: #ffdcad 2.5px ridge;
