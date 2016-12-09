@@ -61,7 +61,7 @@ function headerRow () {
 
  var trEl = document.createElement('tr');
   var thEl = document.createElement('th');
-      thEl.textContent = ('    ');
+      thEl.textContent = ('Hours of Operation');
       trEl.appendChild(thEl);
 
    for (var i = 0; i < hoursOpen.length; i++){
@@ -142,7 +142,7 @@ tableMf.appendChild(trEl);
    return alert('Must enter data');
  }
    else {
-  newEntry;
+  // newEntry;
   tableMf.innerHTML='';
 var newEntry = new Store (locationName, minCustHr, maxCustHr, avgCookiesCust);
   masterFunction();///////create

@@ -1,0 +1,14 @@
+body{
+  background-color: #ffecd3;
+
+}
+#SalmonCookiejs {
+  border: #c78834 3px solid;
+  background-color: #ffdcad;
+  max-width: 1px;
+  margin: 0 auto;
+
+}
+#SalmonCookiejs td {
+  border: #ffdcad 2.5px ridge;
+}
