@@ -5,16 +5,22 @@ body{
 /*Header*/
 nav{
   background: none;
-    float: right;
+    position: relative;
     font-size: 1.125em;
-    margin-right: 5%;
-    text-align: right;
-    width: 45%;
+    margin: 0 auto;
+    text-align: left;
+    width: 75%;
 
 }
 nav ul{
+  align-items: center;
   list-style: none;
+  padding: 0;
+
+}
+nav li{
   display: inline;
+  margin: 0;
 }
 #mainheader {
   border: #e5aa5a 2.5px solid;
