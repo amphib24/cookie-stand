@@ -13,14 +13,20 @@ nav{
 
 }
 nav ul{
-  align-items: center;
-  list-style: none;
+  list-style-type: none;
+  margin: 0;
   padding: 0;
+  width: 200px;
 
 }
-nav li{
-  display: inline;
-  margin: 0;
+nav li a{
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  width: 60px;
+}
+nav li:hover{
+  background-color: grey;
 }
 #mainheader {
   border: #e5aa5a 2.5px solid;
