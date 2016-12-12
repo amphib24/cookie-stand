@@ -1,42 +1,91 @@
 body{
   background-color: #ffecd3;
-
+}
+.chinook{
+  z-index: -999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 30%;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.6;
+  background-position: center;
+  border: 3px solid darkgrey;
+}
+.salmon{
+  z-index: -999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 49.5%;
+  height: 30%;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.6;
+  background-position: center;
+  border: 3px solid darkgrey;
 }
 /*Header*/
 nav{
   background: none;
-    position: relative;
-    font-size: 1.125em;
-    margin: 0 auto;
-    text-align: left;
-    width: 75%;
-
+  position: absolute;
+  font-size: 1.125em;
+  margin: 0 auto;
+  width: 100%;
 }
 nav ul{
+  position: absolute;
   list-style-type: none;
-  margin: 0;
+  margin-top: 100px;
   padding: 0;
-  width: 200px;
-
+  width: 150px;
+  border: solid #1f32e8;
+  float:left;
+}
+nav li{
+  border: solid #774000;
 }
 nav li a{
   display: block;
-  color: #000;
   padding: 8px 16px;
   width: 60px;
+  text-align: center;
+  text-decoration: none;
+  color: #774000;
 }
 nav li:hover{
-  background-color: grey;
+  background-color: white;
 }
-#mainheader {
-  border: #e5aa5a 2.5px solid;
-  background-color: #ffcc87;
+#mainheader{
   margin: 0 auto;
   text-align: center;
-  max-width: 75%;
+  max-width: 100%;
+}
+article{
+  width: 50%;
+  margin: 0 auto;
+  padding: 165px;
+}
+article p{
+  height: 260px;
+  width: 95%;
+  overflow: auto;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 24px;
+  padding-left: 30px;
+}
+iframe{
+  position: relative;
+  left: 860px;
+  top: -75px;
 }
 
-/*Tabe*/
+/*sales page*/
 #SalmonCookiejs {
   border: #0b0bc5 3px solid;
   background-color: #ffdcad;
@@ -61,10 +110,55 @@ nav li:hover{
   background-position: center;
   border: 3px solid darkgrey;
 }
+/*about*/
 #creepsphoto {
-  float:left;
+  z-index: -999;
+  position: relative;
+  height: 500px;
+  width:600px;
+  background-position: center;
+  left: 50%;
+}
+h1.about{
+  text-align: center;
 }
 p.about{
-  text-align:right;
-  position:absolute;;
+  text-align: center;
+  position: relative;
+  height: 450px;
+  width: 35%;
+  overflow: auto;
+  font-size: 18px;
+  font-family:: Sans-serif Arial Black;
+  line-height: 24px;
+  left: 182px;
+  top: -500px;
+}
+/*Locations page*/
+
+#locations{
+  border: black 3px solid;
+}
+#locations th{
+    border: black 3px solid;
+}
+#locations td{
+    border: black 2px dashed;
+}
+/*merch page*/
+#Merchheader{
+  text-align: center;
+}
+#Merch ul{
+  position: absolute;;
+  display: inline;
+  list-style-type: none;
+  margin-top: 100px;
+  padding: 0;
+  width: 150px;
+  left: 350px;
+}
+#Merch li a{
+  border: lightgrey 2px solid;
+  display: inline;
 }
