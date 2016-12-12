@@ -64,6 +64,9 @@ nav li:hover{
   margin: 0 auto;
   text-align: center;
   max-width: 100%;
+  color: #36454f;
+  font-style: oblique;
+  font-family: cursive, Apple Chancery;
 }
 article{
   width: 50%;
@@ -121,6 +124,7 @@ iframe{
 }
 h1.about{
   text-align: center;
+  font-family: cursive, Apple Chancery;
 }
 p.about{
   text-align: center;
